@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title> { title } - My Shop of Things </title>
+
+    </head>
+    <body>
+        <h1>Things I Sell</h1>
+        <br>
+        Inflatable Crocodile
+        <img src="/Users/student/Desktop/codeclan_work/week_3/day_3/flask_lab/app/static/croc.jpg" alt="">
+        <li><a href="/Croc">Click to view item</a></li>
+        <br>
+        <br>
+        Life size image of Marty Mcfly (hand drawn)
+        <img src="/Users/student/Desktop/codeclan_work/week_3/day_3/flask_lab/app/static/mcfly.jpg" alt="">
+        <li><a href="/Mcfly">Click to view item</a></li>
+        <br>
+        
+        
+        <!-- <div class ="Items-for-sale">
+            <h2>Select from the following things.</h2>
+                <p>
+                    {{item.item_name}} :  <b> {{item.description}} </b> 
+
+              
+                    <img src="/Users/student/Desktop/codeclan_work/week_3/day_3/flask_lab/app/models/images/croc.jpg" alt="">
+                    <li><a href="/Croc">Click to view item</a></li>
+                    <br>
+                    <li><a href="/Mcfly">Click to view item</a></li>
+                    <br>
+
+                <p> -->
+
+        </div>
+
+        <h2>Recent Orders</h2>
+        {% for order in orders %}
+        <div>
+          
+            <p>
+                {{order.customer_name}} : <b> {{order.date}} : <b> {{order.item}} :
+                    <b> {{order.quantity}} </b>
+                 
+            </p>
+
+        </div>
+        {% endfor %} 
+    </body>
+
+
+
+</html>

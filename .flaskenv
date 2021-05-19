@@ -1,0 +1,2 @@
+FLASK_APP=things.py
+FLASK_ENV=development
